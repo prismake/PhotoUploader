@@ -101,5 +101,16 @@ extension PhotoVC: UIImagePickerControllerDelegate {
             return
         }
         imageTake.image = selectedImage
+        if let data = selectedImage.pngData() {
+            let imageHolder = ImageHolder.create(insertIntoDB: true)
+            imageHolder.id = 1
+            imageHolder.photo = data as NSData
+            do {
+            try imageHolder.managedObjectContext?.save()
+            } catch {
+                
+            }
+        /// zapisz do core data
+    }
     }
 }

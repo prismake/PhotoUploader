@@ -13,6 +13,10 @@
 		E5DBC4CF21FB1011003C984C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5DBC4CE21FB1011003C984C /* Assets.xcassets */; };
 		E5DBC4D221FB1011003C984C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5DBC4D021FB1011003C984C /* LaunchScreen.storyboard */; };
 		E5DBC4DD21FB1012003C984C /* PhotoUploudTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DBC4DC21FB1012003C984C /* PhotoUploudTests.swift */; };
+		E5DBC4E921FB18B0003C984C /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E5DBC4E721FB18B0003C984C /* Model.xcdatamodeld */; };
+		E5DBC4EB21FB1906003C984C /* ImageHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DBC4EA21FB1906003C984C /* ImageHolder.swift */; };
+		E5DBC4EE21FB19B8003C984C /* ImageHolder+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DBC4EC21FB19B8003C984C /* ImageHolder+CoreDataClass.swift */; };
+		E5DBC4EF21FB19B8003C984C /* ImageHolder+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DBC4ED21FB19B8003C984C /* ImageHolder+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		E5DBC4D821FB1011003C984C /* PhotoUploudTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoUploudTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5DBC4DC21FB1012003C984C /* PhotoUploudTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoUploudTests.swift; sourceTree = "<group>"; };
 		E5DBC4DE21FB1012003C984C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5DBC4E821FB18B0003C984C /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		E5DBC4EA21FB1906003C984C /* ImageHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHolder.swift; sourceTree = "<group>"; };
+		E5DBC4EC21FB19B8003C984C /* ImageHolder+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageHolder+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E5DBC4ED21FB19B8003C984C /* ImageHolder+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageHolder+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +86,15 @@
 			isa = PBXGroup;
 			children = (
 				E5DBC4C721FB100B003C984C /* AppDelegate.swift */,
+				E5DBC4EC21FB19B8003C984C /* ImageHolder+CoreDataClass.swift */,
+				E5DBC4ED21FB19B8003C984C /* ImageHolder+CoreDataProperties.swift */,
+				E5DBC4E721FB18B0003C984C /* Model.xcdatamodeld */,
 				E5DBC4C921FB100B003C984C /* ViewController.swift */,
 				E5DBC4CB21FB100B003C984C /* Main.storyboard */,
 				E5DBC4CE21FB1011003C984C /* Assets.xcassets */,
 				E5DBC4D021FB1011003C984C /* LaunchScreen.storyboard */,
 				E5DBC4D321FB1011003C984C /* Info.plist */,
+				E5DBC4EA21FB1906003C984C /* ImageHolder.swift */,
 			);
 			path = PhotoUploud;
 			sourceTree = "<group>";
@@ -198,7 +210,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5DBC4CA21FB100B003C984C /* ViewController.swift in Sources */,
+				E5DBC4EB21FB1906003C984C /* ImageHolder.swift in Sources */,
 				E5DBC4C821FB100B003C984C /* AppDelegate.swift in Sources */,
+				E5DBC4E921FB18B0003C984C /* Model.xcdatamodeld in Sources */,
+				E5DBC4EE21FB19B8003C984C /* ImageHolder+CoreDataClass.swift in Sources */,
+				E5DBC4EF21FB19B8003C984C /* ImageHolder+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +481,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E5DBC4E721FB18B0003C984C /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E5DBC4E821FB18B0003C984C /* Model.xcdatamodel */,
+			);
+			currentVersion = E5DBC4E821FB18B0003C984C /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E5DBC4BC21FB100A003C984C /* Project object */;
 }
